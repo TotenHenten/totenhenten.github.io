@@ -23,6 +23,7 @@
 	</div>
 	<div class="box">
 		<iframe src="https://www.chmi.cz/files/portal/docs/meteo/rad/inca-cz/short.html?display=var&amp;gmap_zoom=7&amp;prod=czrad_maxz_celdn_masked&amp;opa1=0.6&amp;opa2=0.7&amp;nselect=7&amp;nselect_fct=6&amp;di=1&amp;rep=2&amp;add=4&amp;update=4&amp;lat=48.89194&amp;lon=18.03667&amp;lang=CZ" align="left"></iframe>
+		<iframe src="https://www.pocasieradar.sk/meteoradar?center=48.9,18.08&placemark=48.8945,18.0444&zoom=8&layer=wr" align="left"></iframe>
 	</div>
 	<div class="box" id="second-web-page-container">
 		<iframe src="https://www.pocasieradar.sk/pocasie/trencin/15890711" align="left"></iframe>
@@ -39,7 +40,6 @@
   mounted() {
     // Get the embedded second web page container
     const container = document.getElementById('second-web-page-container');
-
     // Find the target element with class "weather-background"
     const targetElement = container.querySelector('.nowcast-container[_ngcontent-serverApp-c3019012962]');
 
