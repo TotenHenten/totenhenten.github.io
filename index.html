@@ -5,26 +5,30 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<style>
 		.box {
-			width: 96%;
+			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
 		}
-	
+
 		iframe {
 			height: 100vh;
 			border: none;
 		}
-	
-		.box iframe:nth-child(1),
-		.box iframe:nth-child(2) {
-			width: 48%;
-			height: 700px;
+
+		.special-box {
+			width: 100%;
+			display: flex;
 		}
-	
+
+		.special-box iframe {
+			width: 50%;
+		}
+
 		#cm {
 			visibility: hidden;
 		}
 	</style>
+
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -33,8 +37,10 @@
 		<a href="https://www.yr.no/en/forecast/daily-table/2-3057140/Slovakia/Tren%C4%8Diansky%20kraj/Tren%C4%8D%C3%ADn%20District/Tren%C4%8D%C3%ADn">    Trencin (yr.no)   </a>
 	</div>
 	<div class="box">
-		<iframe src="https://www.chmi.cz/files/portal/docs/meteo/rad/inca-cz/short.html?display=var&amp;gmap_zoom=7&amp;prod=czrad_maxz_celdn_masked&amp;opa1=0.6&amp;opa2=0.7&amp;nselect=7&amp;nselect_fct=6&amp;di=1&amp;rep=2&amp;add=4&amp;update=4&amp;lat=48.89194&amp;lon=18.03667&amp;lang=CZ" align="left"></iframe>
-		<iframe src="https://www.pocasieradar.sk/meteoradar?center=48.9,18&placemark=48.8945,18.0444&zoom=8.67&layer=wr"></iframe>
+		<div class="special-box">
+			<iframe src="https://www.chmi.cz/files/portal/docs/meteo/rad/inca-cz/short.html?display=var&amp;gmap_zoom=7&amp;prod=czrad_maxz_celdn_masked&amp;opa1=0.6&amp;opa2=0.7&amp;nselect=7&amp;nselect_fct=6&amp;di=1&amp;rep=2&amp;add=4&amp;update=4&amp;lat=48.89194&amp;lon=18.03667&amp;lang=CZ" align="left"></iframe>
+			<iframe src="https://www.pocasieradar.sk/meteoradar?center=48.9,18&placemark=48.8945,18.0444&zoom=8.67&layer=wr"></iframe>
+		</div>
 	</div>
 	<div class="box" id="second-web-page-container">
 		<iframe src="https://www.pocasieradar.sk/pocasie/trencin/15890711"></iframe>
